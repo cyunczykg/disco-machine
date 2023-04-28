@@ -58,17 +58,16 @@ video {
 }
 
 #squeres-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
-  font-size: 30;
-  color: gold;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
 }
 
 .squere {
-  width: 5vw;
-  height: 5vh;
+  width: 4.8vw;
+  height: 4.8vh;
   background-color: #5420d3;
   z-index: -1;
   animation: fade 0.5 infinite;
